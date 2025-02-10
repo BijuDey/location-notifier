@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "assignment",
+    "name": "Location Notifier",
     "slug": "assignment",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,13 +9,24 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "API_KEY"
+      },
+      "bundleIdentifier": "com.assignment"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "API_KEY"
+        }
+      },
+      "package": "com.assignment",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +43,25 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "12659589-fe23-4eca-989c-721ce51a8ee1"
+      }
+    },
+    "owner": "biju0011"
   }
 }
