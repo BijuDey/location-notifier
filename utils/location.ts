@@ -1,6 +1,6 @@
 import Geocoder from "react-native-geocoding";
 
-Geocoder.init("AIzaSyA-od9hrzVEANJg7S5c8P6qTYfh6FoMrko");
+Geocoder.init("API_KEY");
 
 export const getAddressFromCoords = async (
   latitude: number,

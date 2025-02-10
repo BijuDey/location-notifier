@@ -76,6 +76,7 @@ Before running the app, ensure you have the following installed:
 - Android Studio (for emulator) or Xcode (for iOS simulator)
 - Add your Google Maps API Keys for both iOS and Android in the app.json file. Look for the ios.config.googleMapsApiKey and android.config.googleMapsApiKey fields, and update them with your keys.
 - Place your google-service.json file (Firebase configuration for Android) in the root folder of your project.
+- Add the google map api key in the utils/lication.ts file in the API_KEY field.
 - Firebase setup with FCM enabled
 
 ### Install dependencies
